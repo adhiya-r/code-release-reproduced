@@ -2,10 +2,13 @@
 
 '''
 import matplotlib.pyplot as plt
+import matplotlib.backends.backend_pgf
+if not hasattr(matplotlib.backends.backend_pgf, 'common_texification'):
+    matplotlib.backends.backend_pgf.common_texification = lambda s: s
 import numpy as np
 from sympy import *
 from sklearn.covariance import MinCovDet
-import tikzplotlib
+#import tikzplotlib
 import json
 import pandas as pd
 
@@ -117,7 +120,7 @@ def historical_papers(conf, spreadsheets, years, cfg):
     plt.xlabel('Conference Year', fontsize=14)
     plt.ylabel('Number of Papers', fontsize=14)
 
-    tikzplotlib.save(plt_filename + '.tex')
+#    tikzplotlib.save(plt_filename + '.tex')
     plt.savefig(plt_filename + '.png')
     plt.show()
 
@@ -240,6 +243,6 @@ def stars_vs_citations(conf, spreadsheets, cfg):
 
     plt.title(conf)
 
-    tikzplotlib.save(plt_filename + '.tex')
+#    tikzplotlib.save(plt_filename + '.tex')
     plt.savefig(plt_filename + '.png')
     plt.show()

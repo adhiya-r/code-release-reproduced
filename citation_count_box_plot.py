@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patheffects as path_effects
 import seaborn as sns
 import pandas as pd
-import tikzplotlib
+#import tikzplotlib
 
 
 # Fixes AttributeError when using a legend in matplotlib for tikzplotlib
@@ -128,7 +128,7 @@ def citation_count_w_wo_code(conf, cfg):
             print_percentages(code, no_code, name=percentile_name)
 
     # Create tikz figure and save PNG
-    tikzplotlib.clean_figure()
-    tikzplotlib.save(figure_output_file + 'tex')
+    # tikzplotlib.clean_figure()
+    # tikzplotlib.save(figure_output_file + 'tex')
     plt.savefig(figure_output_file + 'png')
     plt.show()
