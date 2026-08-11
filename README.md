@@ -1,15 +1,15 @@
 # Reproducibility Report: Impact of Releasing Code with Publications
 
 This repository contains the reproduced data analysis and plotting scripts for the paper: 
-["What is the Impact of Releasing Code with Publications? Statistics from the Machine Learning, Robotics, and Control Communities."](https://ieeexplore.ieee.org/document/10621946)[cite: 1, 2].
+["What is the Impact of Releasing Code with Publications? Statistics from the Machine Learning, Robotics, and Control Communities."](https://ieeexplore.ieee.org/document/10621946).
 
 ## 1. Reproducibility Status (Verified 2026)
 This project has successfully completed the **5 Stages of Reproducibility**:
-1.  **Download**: Repository cloned and data verified[cite: 82, 83].
-2.  **Installing**: Successfully resolved dependency conflicts for Python 3.13[cite: 289, 291].
-3.  **Running**: `main.py` executed successfully, processing JSON datasets for CDC, ICRA, and NeurIPS[cite: 86, 271].
-4.  **Experimenting**: Verified the statistical calculations for median and third-quartile citation growth[cite: 101, 103, 105].
-5.  **Graphing**: Regenerated all primary figures (Figures 1-4) in `.png` format[cite: 87, 102, 170].
+1.  **Download**: Repository cloned and data verified.
+2.  **Installing**: Successfully resolved dependency conflicts for Python 3.13.
+3.  **Running**: `main.py` executed successfully, processing JSON datasets for CDC, ICRA, and NeurIPS.
+4.  **Experimenting**: Verified the statistical calculations for median and third-quartile citation growth.
+5.  **Graphing**: Regenerated all primary figures (Figures 1-4) in `.png` format.
 
 ## 2. Environment & Installation
 The original code was tested on legacy environments. To reproduce this on a modern system (e.g., macOS 13+ or Ubuntu 22.04+), follow these steps:
@@ -31,7 +31,7 @@ Due to deprecations in modern Python 3.10+ libraries, the following patches were
 
 ## 3. Usage
 ```sh
-git clone [https://github.com/utiasDSL/code-release.git](https://github.com/utiasDSL/code-release.git)
+git clone https://github.com/utiasDSL/code-release.git
 cd code-release/
 python3 main.py
 ```
